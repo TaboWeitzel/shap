@@ -16,7 +16,7 @@ log = logging.getLogger('shap')
 class Tabular(Masker):
     """A common base class for Independent and Partition."""
 
-    def __init__(self, data, max_samples=100, clustering=None):
+    def __init__(self, data, max_samples=1000, clustering=None):
         """This masks out tabular features by integrating over the given background dataset.
 
         Parameters
